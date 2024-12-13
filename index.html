@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="./favicon.png" type="image/png">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="flex flex-col min-h-screen">
     <header class="bg-white shadow-md">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -28,13 +26,14 @@
                     <li><a href="sobre.html" class="text-gray-600 hover:text-cyan-700">Sobre</a></li>
                     <li><a href="contato.html" class="text-gray-600 hover:text-cyan-700">Contato</a></li>
                     <li><a href="faq.html" class="text-cyan-700 font-semibold">FAQ</a></li>
+                    <li><a href="entrar.html" class="text-gray-600 font-semibold">Entrar</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="flex-grow">
-        <section class="bg-cyan-700 text-white py-20">
+        <section class="bg-[url('Design-sem-nome.gif')] bg-cover bg-center text-white py-60">
             <div class="container mx-auto px-4 text-center">
                 <h1 class="text-4xl md:text-5xl font-bold mb-4">Nosso destino é você!</h1>
                 <p class="text-xl mb-8">Já imaginou hardwares de primeira linha entregues na sua porta de forma segura e rápida?</p>
@@ -47,14 +46,14 @@
                 <h2 class="text-3xl font-bold text-center mb-12 hover:text-cyan-700">Produtos em destaque</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8">
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="https://www.kabum.com.br/_next/image?url=https%3A%2F%2Fimages3.kabum.com.br%2Fprodutos%2Ffotos%2F165133%2Fplaca-mae-asus-tuf-gaming-a520m-plus-ii-amd-am4-matx-ddr4-90mb17g0-m0eay0_1632513548_g.jpg&w=3840&q=75" alt="Power Drill" class="w-full h-auto object-cover">
+                        <img src="https://images8.kabum.com.br/produtos/fotos/sync_mirakl/571098/Notebook-Gamer-Acer-Nitro-V15-Intel-Core-I5-13420h-8GB-DDR5-RTX-2050-4GB-SSD-512GB-Tela-15-6-FHD-144Hz-Windows-11-Home-Anv15-51-58ql_1734012008_g.jpg" alt="Power Drill" class="w-full h-auto object-cover">
                         <div class="p-4">
-                            <h3 class="font-semibold text-lg mb-2">Placa-mãe</h3>
-                            <p class="text-gray-600 mb-4">Asus TUF GAMING A520M-PLUS II, AMD AM4, mATX, DDR4</p>
+                            <h3 class="font-semibold text-lg mb-2">Notebook Gamer</h3>
+                            <p class="text-gray-600 mb-4">Acer Nitro V15, Intel Core I5-13420h, 8GB DDR5, RTX 2050 4GB</p>
                             <div class="flex justify-between items-center">
-                                <span class="font-bold text-lg">R$ 569,99</span>
+                                <span class="font-bold text-lg">R$ 4.099,91</span>
                             </div>
-                            <a class="flex justify-center items-center py-4" href="https://www.kabum.com.br/produto/165133/placa-mae-asus-tuf-gaming-a520m-plus-ii-amd-am4-matx-ddr4" target="_blank">
+                            <a class="flex justify-center items-center py-4" href="https://www.kabum.com.br/produto/571098/notebook-gamer-acer-nitro-v15-intel-core-i5-13420h-8gb-ddr5-rtx-2050-4gb-ssd-512gb-tela-15-6-fhd-144hz-windows-11-home-anv15-51-58ql " target="_blank">
                                 <button class="bg-cyan-700 text-white px-4 py-2 rounded hover:bg-cyan-700/90 transition duration-300">
                                     Comprar
                                 </button>
@@ -62,7 +61,8 @@
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="https://www.kabum.com.br/_next/image?url=https%3A%2F%2Fimages0.kabum.com.br%2Fprodutos%2Ffotos%2F437590%2Fplaca-de-video-rtx-4090-rog-strix-asus-nvidia-geforce-24-gb-gddr6x-argb-dlss-ray-tracing-branco-rog-strix-rtx4090-24g-white_1682338329_g.jpg&w=3840&q=75" alt="Toolset" class="w-full h-auto object-cover">
+                        <img src="https://www.kabum.com.br/_next/image?url=https%3A%2F%2Fimages0.kabum.com.br%2Fprodutos%2Ffotos%2F437590%2Fplaca-de-video-rtx-4090-rog-strix-asus-nvidia-geforce-24-gb-gddr6x-argb-dlss-ray-tracing-branco-rog-strix-rtx4090-24g-white_1682338329_g.jpg&w=3840&q=75"
+                            alt="Toolset" class="w-full h-auto object-cover">
                         <div class="p-4">
                             <h3 class="font-semibold text-lg mb-2">Placa de Vídeo</h3>
                             <p class="text-gray-600 mb-4">RTX 4090 ROG Strix Asus NVIDIA GeForce, 24 GB GDDR6X</p>
@@ -92,7 +92,8 @@
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="https://www.kabum.com.br/_next/image?url=https%3A%2F%2Fimages9.kabum.com.br%2Fprodutos%2Ffotos%2F520369%2Fprocessador-amd-ryzen-7-5700x3d-3-6-ghz-4-1ghz-max-turbo-cache-4mb-8-nucleos-16-threads-am4-video-integrado-100-100001503wof_1708023990_g.jpg&w=3840&q=75" alt="Safety Gear" class="w-full h-auto object-cover">
+                        <img src="https://www.kabum.com.br/_next/image?url=https%3A%2F%2Fimages9.kabum.com.br%2Fprodutos%2Ffotos%2F520369%2Fprocessador-amd-ryzen-7-5700x3d-3-6-ghz-4-1ghz-max-turbo-cache-4mb-8-nucleos-16-threads-am4-video-integrado-100-100001503wof_1708023990_g.jpg&w=3840&q=75"
+                            alt="Safety Gear" class="w-full h-auto object-cover">
                         <div class="p-4">
                             <h3 class="font-semibold text-lg mb-2">Processador</h3>
                             <p class="text-gray-600 mb-4">AMD Ryzen 7 5700X3D, 3.6 GHz, 8 Núcleos, 16 Threads</p>
@@ -107,7 +108,8 @@
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="https://www.kabum.com.br/_next/image?url=https%3A%2F%2Fimages6.kabum.com.br%2Fprodutos%2Ffotos%2F324516%2Fgabinete-gamer-rise-mode-glass-06x-lateral-em-vidro-fume-e-frontal-em-vidro-temperado-preto-rm-ca-06x-fb_1660589149_g.jpg&w=3840&q=75" alt="Safety Gear" class="w-full h-auto object-cover">
+                        <img src="https://www.kabum.com.br/_next/image?url=https%3A%2F%2Fimages6.kabum.com.br%2Fprodutos%2Ffotos%2F324516%2Fgabinete-gamer-rise-mode-glass-06x-lateral-em-vidro-fume-e-frontal-em-vidro-temperado-preto-rm-ca-06x-fb_1660589149_g.jpg&w=3840&q=75"
+                            alt="Safety Gear" class="w-full h-auto object-cover">
                         <div class="p-4">
                             <h3 class="font-semibold text-lg mb-2">Gabinete</h3>
                             <p class="text-gray-600 mb-4">Rise Mode Glass 06X, Mid Tower, Lateral em Vidro Fumê</p>
@@ -227,4 +229,5 @@
         </div>
     </footer>
 </body>
+
 </html>
